@@ -44,7 +44,6 @@ jobs:
       shell: bash
       run: |
        g++ -o main vector.cpp
-       .\main.exe
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

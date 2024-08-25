@@ -1,3 +1,2 @@
-C:/CC/Code/C++/Vector/cmake-build-debug/CMakeFiles/Vector.dir
 C:/CC/Code/C++/Vector/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/CC/Code/C++/Vector/cmake-build-debug/CMakeFiles/rebuild_cache.dir

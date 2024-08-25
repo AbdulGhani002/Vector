@@ -30,7 +30,11 @@
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
 cmake-build-debug/
 cmake-build-debug/*
 .idea/
+=======
+cmake-build-debug/*
+>>>>>>> b31673f39923d7b5ca9ed2ba6eba742aa228b68d
 .idea/*

@@ -20,6 +20,7 @@ namespace matrix {
             for (int i = 0; i < firstVector.size(); i++) {
                 std::cout << resultant[i] << " ";
             }
+            std::cout<<std::endl;
             return resultant;
         }
 
@@ -31,10 +32,10 @@ namespace matrix {
             for (int i = 0; i < firstVector.size(); i++) {
                 std::cout << resultant[i] << " ";
             }
+            std::cout<<std::endl;
             return resultant;
         }
     };
-
     static std::vector<std::vector<int>> add2D(const std::vector<std::vector<int>>& firstMatrix, const std::vector<std::vector<int>>& secondMatrix) {
         if (firstMatrix.size() != secondMatrix.size() || firstMatrix[0].size() != secondMatrix[0].size()) {
             throw std::invalid_argument("Matrices must have the same dimensions");

@@ -11,6 +11,7 @@
 
 namespace matrix {
 
+
     class vector {
     public:
         static std::vector<int> add(std::vector<int> firstVector, std::vector<int> secondVector) {

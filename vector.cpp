@@ -1,7 +1,5 @@
 
-
 #include "vector.h"
-
 int main() {
     std::vector<int> firstVector = {1, 3, 6, 9};
     std::vector<int> secondVector = {1, 3, -6, 9};

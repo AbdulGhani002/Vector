@@ -39,4 +39,8 @@ namespace matrix {
 
 } // matrix
 
+<<<<<<< HEAD
 #endif //VECTOR_VECTOR_H
+=======
+#endif //VECTOR_VECTOR_H
+>>>>>>> master

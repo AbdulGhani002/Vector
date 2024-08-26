@@ -18,7 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71680a4-d1c4-4e29-8e1a-4da3a1455df9" name="Changes" comment="Multiplication method is made" />
+    <list default="true" id="c71680a4-d1c4-4e29-8e1a-4da3a1455df9" name="Changes" comment="Documentation is made" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +97,7 @@
       <workItem from="1724600953031" duration="2167000" />
       <workItem from="1724604117511" duration="81000" />
       <workItem from="1724637500335" duration="2248000" />
-      <workItem from="1724640023229" duration="2344000" />
+      <workItem from="1724640023229" duration="2643000" />
     </task>
     <task id="LOCAL-00001" summary="Multiplication method is made">
       <option name="closed" value="true" />
@@ -123,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724641734112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Documentation is made">
+      <option name="closed" value="true" />
+      <created>1724642682037</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724642682037</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +157,7 @@
     <MESSAGE value="Matrix add and multiply methods are made" />
     <MESSAGE value="Add and substract functions are made" />
     <MESSAGE value="Multiplication method is made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiplication method is made" />
+    <MESSAGE value="Documentation is made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation is made" />
   </component>
 </project>

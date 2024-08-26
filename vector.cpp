@@ -24,4 +24,7 @@ int main() {
                                                                    {1, 9,  7, 5},
                                                                    {1, 18, 9, 8}};
     matrix::multiply2D(firstMatrixForMultiplication, secondMatrixForMultiplication);
+    std::vector<int> vec1 = {1, 2, 3};
+    int result2 = matrix::vector::dotProduct(vec1);
+    std::cout<<matrix::vector::cosineSimilarity(firstVector,secondVector) * 100 <<" %"<<std::endl;
 }

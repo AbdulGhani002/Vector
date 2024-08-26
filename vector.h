@@ -6,6 +6,7 @@
 #include <utility>
 #include<vector>
 #include<iostream>
+#include<cmath>
 
 namespace matrix {
 
@@ -34,6 +35,57 @@ namespace matrix {
             }
             std::cout << std::endl;
             return resultant;
+        }
+
+        static std::vector<int> scale(std::vector<int> vector, int scale) {
+            for (int i = 0; i < vector.size(); i++) {
+                vector[i] *= scale;
+            }
+            return vector;
+        }
+
+        static int dotProduct(const std::vector<int> &firstVector, const std::vector<int> &secondVector = std::vector<int>()) {
+            std::vector<int> adjustedSecondVector = secondVector;
+
+            if (adjustedSecondVector.empty()) {
+                adjustedSecondVector.resize(firstVector.size(), 0);
+            }
+
+            if (firstVector.size() != adjustedSecondVector.size()) {
+                throw std::invalid_argument("Vectors must be of same length");
+            }
+
+            int result = 0;
+            for (size_t i = 0; i < firstVector.size(); ++i) {
+                result += firstVector[i] * adjustedSecondVector[i];
+            }
+
+            return result;
+        }
+        static double magnitude(const std::vector<int> &firstVector, const std::vector<int> &secondVector = std::vector<int>()){
+            std::vector<int> adjustedSecondVector = secondVector;
+
+            if (adjustedSecondVector.empty()) {
+                adjustedSecondVector.resize(firstVector.size(), 0);
+            }
+            if (firstVector.size() != adjustedSecondVector.size()) {
+                throw std::invalid_argument("Vectors must be of same length");
+            }
+            int result = 0;
+            for(int i=0;i<firstVector.size();i++){
+                result += (adjustedSecondVector[i] - firstVector[i])*(adjustedSecondVector[i] - firstVector[i]);
+            }
+            return sqrt((double)result);
+        }
+        static double cosineSimilarity(const std::vector<int> &firstVector, const std::vector<int> &secondVector){
+            if (firstVector.size() != secondVector.size()) {
+                throw std::invalid_argument("Vectors must be of same length");
+            }
+            int dotProduct = matrix::vector::dotProduct(firstVector,secondVector);
+            double magnitudeOfA = matrix::vector::magnitude(firstVector);
+            double magnitudeOfB = matrix::vector::magnitude(secondVector);
+            double cosineSimilarity = dotProduct / (magnitudeOfA*magnitudeOfB);
+            return cosineSimilarity;
         }
     };
 
